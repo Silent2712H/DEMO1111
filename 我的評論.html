@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SB Admin 2 - Dashboard</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/themify-icons.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="vendors/animate-css/animate.css">
+  <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
+  
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<style>
+.navbg1
+{
+ margin-top: -20px;
+ background-color: transparent;
+}
+.mystyle1
+{
+ margin-top: -1cm;
+}
+.mycomment1
+{
+ background-color: transparent;
+}
+.text1
+{
+ text-align: right;
+}
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  background-color: rgba(0,0,0,0.5);
+  -webkit-transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
+  transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
+  transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background: rgba(0,0,0,0.6);
+  -webkit-transform: translatey(-100px);
+  -ms-transform: translatey(-100px);
+  transform: translatey(-100px);
+  -webkit-transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
+  transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
+  padding: 10px;
+}
+
+.hovereffect a.info {
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  margin: 50px 0 0;
+  padding: 7px 14px;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect:hover img {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.hovereffect:hover h2,.hovereffect:hover a.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-transform: translatey(0);
+  -webkit-transform: translatey(0);
+  transform: translatey(0);
+}
+
+.hovereffect:hover a.info {
+  -webkit-transition-delay: .2s;
+  transition-delay: .2s;
+}
+</style>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="首頁DEMO.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+          <i class="fas fa-laugh-wink"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">雲墨小棧<sup></sup></div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
+        <a class="nav-link" href="會員首頁.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>雲墨空間</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        關於你的選項
+      </div>
+
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          <i class="fas fa-fw fa-cog"></i>
+          <span>藏書閣</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">空間分類:</h6>
+            <a class="collapse-item" href="最近閱讀.html">最近閱讀</a>
+            <a class="collapse-item" href="心儀書單.html">心儀書單</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- Nav Item - Utilities Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+          <i class="fas fa-fw fa-wrench"></i>
+          <span>我的帳戶</span>
+        </a>
+        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">帳戶總覽:</h6>
+            <a class="collapse-item" href="我的帳戶.html">帳戶綜覽</a>
+          </div>
+        </div>
+      </li>
+
+
+       <!-- Nav Item - Utilities Collapse Menu -->
+       <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>閱讀紀錄</span>
+        </a>
+        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">個人歷史閱讀:</h6>
+            <a class="collapse-item" href="本月閱讀紀錄.html">本月閱讀紀錄</a>
+            <a class="collapse-item" href="#">半年閱讀紀錄</a>
+          </div>
+        </div>
+      </li>
+
+        <!-- Nav Item - Charts -->
+        <li class="nav-item">
+          <a class="nav-link" href="我的評論.html">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>我的評論</span></a>
+        </li>
+
+
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+    
+    <!-- End of Sidebar -->
+
+  <!-- Content Wrapper -->
+  <div id="content-wrapper" class="d-flex flex-column">
+
+    <!-- Main Content -->
+    <div id="content">
+
+      <!-- Topbar -->
+      <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+        <!-- Sidebar Toggle (Topbar) -->
+        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+          <i class="fa fa-bars"></i>
+        </button>
+
+        <!-- Topbar Search -->
+        <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+          <div class="input-group">
+            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="button">
+                <i class="fas fa-search fa-sm"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <!-- Topbar Navbar -->
+        <ul class="navbar-nav ml-auto">
+
+          <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+          <li class="nav-item dropdown no-arrow d-sm-none">
+            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-search fa-fw"></i>
+            </a>
+            <!-- Dropdown - Messages -->
+            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+              <form class="form-inline mr-auto w-100 navbar-search">
+                <div class="input-group">
+                  <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-primary" type="button">
+                      <i class="fas fa-search fa-sm"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </li>
+
+          <!-- Nav Item - Alerts -->
+          <li class="nav-item dropdown no-arrow mx-1">
+            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-bell fa-fw"></i>
+              <!-- Counter - Alerts -->
+              <span class="badge badge-danger badge-counter">3+</span>
+            </a>
+            <!-- Dropdown - Alerts -->
+            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+              <h6 class="dropdown-header">
+                系統提示
+              </h6>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <div class="mr-3">
+                  <div class="icon-circle bg-primary">
+                    <i class="fas fa-file-alt text-white"></i>
+                  </div>
+                </div>
+                <div>
+                  <div class="small text-gray-500">December 12, 2019</div>
+                  <span class="font-weight-bold">您儲值的1000元以確實存入您的帳戶,感謝您對雲墨小棧的支持!</span>
+                </div>
+              </a>
+              
+              <a class="dropdown-item text-center small text-gray-500" href="#">展示所有提示</a>
+            </div>
+          </li>
+
+          <!-- Nav Item - Messages -->
+          <li class="nav-item dropdown no-arrow mx-1">
+            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-envelope fa-fw"></i>
+              <!-- Counter - Messages -->
+              <span class="badge badge-danger badge-counter">7</span>
+            </a>
+            <!-- Dropdown - Messages -->
+            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
+              <h6 class="dropdown-header">
+                訊息中心
+              </h6>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <div class="dropdown-list-image mr-3">
+                  <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
+                  <div class="status-indicator bg-success"></div>
+                </div>
+                <div class="font-weight-bold">
+                  <div class="text-truncate">No body knows how to be a president better than me.</div>
+                  <div class="small text-gray-500">Donald Trump · 30分鐘</div>
+                </div>
+              </a>
+              <a class="dropdown-item text-center small text-gray-500" href="#">展示所有訊息</a>
+            </div>
+          </li>
+
+          <div class="topbar-divider d-none d-sm-block"></div>
+
+          <!-- Nav Item - User Information -->
+          <li class="nav-item dropdown no-arrow">
+            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="mr-2 d-none d-lg-inline text-gray-600 small">全端班 第三組萬歲!</span>
+              <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+            </a>
+            <!-- Dropdown - User Information -->
+            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+              <a class="dropdown-item" href="#">
+                <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                個人檔案
+              </a>
+              <a class="dropdown-item" href="#">
+                <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                編輯個人資訊
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                登出
+              </a>
+            </div>
+          </li>
+
+        </ul>
+
+      </nav>
+      <!-- End of Topbar -->
+
+      <nav aria-label="breadcrumb navbg1">
+          <ol class="breadcrumb navbg1">
+            <li class="breadcrumb-item"><a href="#">雲墨空間</a></li>
+            <li class="breadcrumb-item active" aria-current="page">我的評論</li>
+          </ol>
+        </nav>
+
+
+
+<!-- Begin Page Content -->
+<div class="container-xl">
+
+
+<!-- Page Heading -->
+<nav class="navbar navbar-light bg-secondary rounded">
+<span class="navbar-brand mb-0 h5 text-white mystyle2">您的歷史評論 :</span>
+</nav>
+
+<div class="blog-wrapper section-padding-100 clearfix">
+  <div class="container mystyle1">
+      <div class="row">
+          <div class="col-12 col-lg-9">
+
+              <!-- Single Blog Area  -->
+              <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1000ms">
+                  <div class="row align-items-center ">
+                      <div class="col-12 col-md-6">
+                          <div class="hovereffect">
+                              <img class="img-responsive" src="img/封面/我的評論/拼裝.jpg" alt="">
+                              <div class="overlay">
+                                  <h2>拼裝家庭</h2>
+                                  <a class="info" href="#">閱讀連結</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                          <!-- Blog Content -->
+                          <div class="single-blog-content">
+                              <div class="line"></div>
+                              <a href="#" class="post-tag">文學/寫實</a>
+                              <h4><a href="#" class="post-headline">評論標題:秦可卿死封龍禁尉</a></h4>
+                              <p class="text-primary">這日夜間，正和平兒燈下擁爐倦繡，早命濃薰繡被，二人睡下，
+                                  屈指算行程該到何處，不知不覺已交三鼓。平兒已睡熟了。鳳姐方覺星眼微朦，
+                                  .....<a href="#">展開</a></p>
+                              <div class="post-meta">
+                                  <p>評論於 <a href="#">1天前</a></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Single Blog Area  -->
+              <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1000ms">
+                  <div class="row align-items-center ">
+                      <div class="col-12 col-md-6">
+                          <div class="hovereffect">
+                              <img class="img-responsive" src="img/封面/我的評論/妖怪.jpg" alt="">
+                              <div class="overlay">
+                                  <h2>妖怪法則</h2>
+                                  <a class="info" href="#">閱讀連結</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                          <!-- Blog Content -->
+                          <div class="single-blog-content">
+                              <div class="line"></div>
+                              <a href="#" class="post-tag">青春校園</a>
+                              <h4><a href="#" class="post-headline">評論標題:金陵城起復賈雨村</a></h4>
+                              <p class="text-primary">有日，到了都中，進入神京，雨村先整了衣冠，帶了小童，
+                                  拿著宗侄的名帖，至榮府門前投了。彼時賈政已看了妹丈之書，即忙請入相會。
+                                  見雨村相貌魁偉
+                                  .....<a href="#">展開</a></p>
+                              <div class="post-meta">
+                                  <p>評論於 <a href="#">1天前</a></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                <!-- Single Blog Area  -->
+                <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="1000ms">
+                  <div class="row align-items-center">
+                      <div class="col-12 col-md-6">
+                          <div class="hovereffect">
+                              <img class="img-responsive" src="img/封面/我的評論/名偵探.jpg" alt="">
+                              <div class="overlay">
+                                  <h2>名偵探柯南</h2>
+                                  <a class="info" href="#">閱讀連結</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                          <!-- Blog Content -->
+                          <div class="single-blog-content">
+                              <div class="line"></div>
+                              <a href="#" class="post-tag">偵探</a>
+                              <h4><a href="#" class="post-headline">評論標題:金陵城起復賈雨村</a></h4>
+                              <p class="text-primary">有日，到了都中，進入神京，雨村先整了衣冠，帶了小童，
+                                  拿著宗侄的名帖，至榮府門前投了。彼時賈政已看了妹丈之書，即忙請入相會。
+                                  見雨村相貌魁偉
+                                  .....<a href="#">展開</a></p>
+                              <div class="post-meta">
+                                  <p>評論於 <a href="#">2天前</a></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+                <!-- Single Blog Area  -->
+                <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="1000ms">
+                  <div class="row align-items-center">
+                      <div class="col-12 col-md-6">
+                          <div class="hovereffect">
+                              <img class="img-responsive" src="img/封面/我的評論/獵人.jpg" alt="">
+                              <div class="overlay">
+                                  <h2>全職獵人</h2>
+                                  <a class="info" href="#">閱讀連結</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                          <!-- Blog Content -->
+                          <div class="single-blog-content">
+                              <div class="line"></div>
+                              <a href="#" class="post-tag">冒險/少年</a>
+                              <h4><a href="#" class="post-headline">評論標題:金陵城起復賈雨村</a></h4>
+                              <p class="text-primary">有日，到了都中，進入神京，雨村先整了衣冠，帶了小童，
+                                  拿著宗侄的名帖，至榮府門前投了。彼時賈政已看了妹丈之書，即忙請入相會。
+                                  見雨村相貌魁偉
+                                  .....<a href="#">展開</a></p>
+                              <div class="post-meta">
+                                  <p>評論於 <a href="#">2天前</a></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+                <!-- Single Blog Area  -->
+                <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="1000ms">
+                  <div class="row align-items-center">
+                      <div class="col-12 col-md-6">
+                          <div class="hovereffect">
+                              <img class="img-responsive" src="img/封面/我的評論/鬥志貿易.jpg" alt="">
+                              <div class="overlay">
+                                  <h2>鬥志貿易公司</h2>
+                                  <a class="info" href="#">閱讀連結</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                          <!-- Blog Content -->
+                          <div class="single-blog-content">
+                              <div class="line"></div>
+                              <a href="#" class="post-tag">文學/寫實</a>
+                              <h4><a href="#" class="post-headline">評論標題:秦可卿死封龍禁尉</a></h4>
+                              <p class="text-primary">這日夜間，正和平兒燈下擁爐倦繡，早命濃薰繡被，二人睡下，
+                                  屈指算行程該到何處，不知不覺已交三鼓。平兒已睡熟了。鳳姐方覺星眼微朦，
+                                  .....<a href="#">展開</a></p>
+                              <div class="post-meta">
+                                  <p>評論於 <a href="#">3天前</a></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Single Blog Area  -->
+              <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1000ms">
+                  <div class="row align-items-center">
+                      <div class="col-12 col-md-6">
+                          <div class="hovereffect">
+                              <img class="img-responsive" src="img/封面/我的評論/殺手.jpg" alt="">
+                              <div class="overlay">
+                                  <h2>殺手的戀愛相談</h2>
+                                  <a class="info" href="#">閱讀連結</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                          <!-- Blog Content -->
+                          <div class="single-blog-content">
+                              <div class="line"></div>
+                              <a href="#" class="post-tag">愛情</a>
+                              <h4><a href="#" class="post-headline">評論標題:秦可卿死封龍禁尉</a></h4>
+                              <p class="text-primary">這日夜間，正和平兒燈下擁爐倦繡，早命濃薰繡被，二人睡下，
+                                  屈指算行程該到何處，不知不覺已交三鼓。平兒已睡熟了。鳳姐方覺星眼微朦，
+                                  .....<a href="#">展開</a></p>
+                              <div class="post-meta">
+                                  <p>評論於 <a href="#">1周前</a></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Load More -->
+              <div class="load-more-btn mt-100 wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="1000ms">
+                  <nav aria-label="Page navigation example">
+                      <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                          <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                        </li>
+                        <li class="page-item active" aria-current="page">
+                          <span class="page-link">
+                            1
+                            <span class="sr-only">(current)</span>
+                          </span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">Next</a>
+                        </li>
+                      </ul>
+                    </nav>
+              </div>
+          </div>
+
+          <!-- ##### Sidebar Area ##### -->
+          <div class="col-12 col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1000ms">
+              <div class="post-sidebar-area">
+
+                  <!-- Tag -->
+                  <div class="sidebar-widget-area">
+                      <h5 class="title">評論書籍標籤</h5>
+                      <div class="widget-content">
+                          <ul class="tags">
+                              <li><a href="#">恐怖驚悚</a></li>
+                              <li><a href="#">愛情</a></li>
+                              <li><a href="#">穿越</a></li>
+                              <li><a href="#">冒險/少年</a></li>                            
+                              <li><a href="#">青春校園</a></li>
+                              <li><a href="#">文學/寫實</a></li>
+                              <li><a href="#">偵探</a></li>
+                          </ul>
+                      </div>
+                  </div>
+
+
+                  <!--評論區-->
+
+                  <div class="sidebar-widget-area">
+                      <h5 class="title">熱門評論</h5>
+
+                  <div class="widget-content">
+
+                  <div class="card border-info mb-3 rounded-0 mycomment1" style="max-width: 18rem;">
+                      <a href="#"><div class="card-header bg-transparent border-info">殺手的戀愛相談</div></a>
+                      <div class="card-body text-info">
+                        <a href="#"><h5 class="card-title text-primary">茗煙:</h5></a>
+                        <p class="card-text">昨夜雨疏風驟，
+                        濃睡不消殘酒。
+                        試問卷簾人，
+                        卻道海棠依舊。
+                        知否，知否？
+                        應是綠肥紅瘦。</p>
+                      </div>
+                      <div class="card-footer bg-transparent border-info text1">2020.10.22</div>
+                    </div>
+                    <hr>
+                    <div class="card border-info mb-3 rounded-0 mycomment1" style="max-width: 18rem;">
+                      <a href="#"><div class="card-header bg-transparent border-info">拼裝家庭</div></a>
+                      <div class="card-body text-info">
+                        <a href="#"><h5 class="card-title text-primary">麝月:</h5></a>
+                        <p class="card-text">欲減羅衣寒未去，不卷珠簾，人在深深處。殘杏枝頭花幾許。啼紅正恨清明雨。
+                          盡日沈香煙一縷。宿酒醒遲，惱破春情緒。遠信還因歸燕誤。小屏風上西江路。</p>
+                      </div>
+                      <div class="card-footer bg-transparent border-info text1">2020.10.19</div>
+                    </div>
+                    <hr>
+                    <div class="card border-info mb-3 rounded-0 mycomment1" style="max-width: 18rem;">
+                      <a href="#"><div class="card-header bg-transparent border-info">妖怪法則</div></a>
+                      <div class="card-body text-info">
+                        <a href="#"><h5 class="card-title text-primary">司棋:</h5></a>
+                        <p class="card-text">花深深。一鉤羅襪行花陰。行花陰。閒將柳帶，細結同心。
+                          日邊消息空沈沈。畫眉樓上愁登臨。愁登臨。海棠開後，望到如今</p>
+                      </div>
+                      <div class="card-footer bg-transparent border-info text1">2020.10.15</div>
+                    </div>
+
+                    <div class="load-more-btn mt-100 wow fadeInUp readmoreposition" data-wow-delay="0.7s" data-wow-duration="1000ms">
+                      <a href="#" class="btn original-btn ">更多熱評</a>
+                  </div>
+            
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+      
+</div>
+<!-- /.container-fluid -->
+
+</div>
+<!-- End of Main Content -->
+
+<!-- Footer -->
+<footer class="sticky-footer bg-white">
+<div class="container my-auto">
+  <div class="copyright text-center my-auto">
+  <span>Copyright &copy; Your Website 2020</span>
+  </div>
+</div>
+</footer>
+    <!-- End of Footer -->
+
+  </div>
+  <!-- End of Content Wrapper -->
+
+</div>
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/chart-area-demo.js"></script>
+  <script src="js/demo/chart-pie-demo.js"></script>
+
+
+   <!-- jQuery (Necessary for All JavaScript Plugins) -->
+   <script src="js/jquery/jquery-2.2.4.min.js"></script>
+   <!-- Popper js -->
+   <script src="js/popper.min.js"></script>
+   <!-- Bootstrap js -->
+   <script src="js/bootstrap.min.js"></script>
+   <!-- Plugins js -->
+   <script src="js/plugins.js"></script>
+   <!-- Active js -->
+   <script src="js/active.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+  
+</body>
+
+</html>

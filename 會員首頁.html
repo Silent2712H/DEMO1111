@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>雲墨小棧-會員首頁</title>
+
+
+
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/themify-icons.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="vendors/animate-css/animate.css">
+  <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+  
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<style>
+.mybg7
+{
+  background-color: #999;
+}
+.myfooter1
+{
+  background-color:#F8F9FC ;
+}
+.mybg6
+{
+  font-family: "微軟正黑體";
+  font-size: 16px;
+  font-weight: bolder;
+  background-color: rgb(11, 28, 34);
+}
+.mymargin2
+{
+  margin-right: -35px;
+  padding-left: 10px;
+}
+.mymargin1
+{
+  margin-right: -20px;
+  padding-left: 10px;
+}
+.mymargin
+{
+  margin-top: -12px;
+}
+.mylistgroup1
+{
+  border-style: hidden;
+}
+.mybg5
+{
+  background-color: snow;
+  
+}
+.mytext1
+{
+  font-weight: bolder;
+}
+.myfont1
+{
+ font-size: 20px;
+ 
+}
+.mybg1
+{
+  margin-top: -25px;
+  background-color: rgb(154, 189, 202);
+}
+.mybg2
+{
+  margin-top: -2cm;
+  background-color: rgb(179, 179, 179);
+}
+.mybg3
+{
+  margin-top: -2cm;
+}
+.mybg4
+{
+  margin-top: 1cm;
+  background-color: rgb(179, 179, 179);
+}
+.mytest1
+{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.mytest2
+{
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.mystyle1
+{
+  padding-top: 100px;
+  padding-left: 40px;
+}
+.mycardeck1
+{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.mybtn1
+{
+  padding-right: 10px;
+  padding-top: 20px;
+}
+
+.mycard1
+{
+  
+  background-color: rgb(179, 217, 248);
+}
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background-color: transparent;
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+
+.ratings {
+position: relative;
+vertical-align: middle;
+display: inline-block;
+color: #ddd; /*背景星星顏色*/
+overflow: hidden;
+font-size: 30px; /*調整字體大小可放大縮小星星*/
+text-shadow: 0px 1px 0 #999;
+}
+.full_star {
+width: 90%; /*調整寬度可變更星等*/
+position: absolute;
+left: 0;
+top: 0;
+white-space: nowrap;
+overflow: hidden;
+color: #D56A16; /*前景星星顏色*/
+}
+
+</style>
+
+<body id="page-top">
+
+ 
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="首頁DEMO.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+          <i class="fas fa-laugh-wink"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">雲墨小棧<sup></sup></div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
+        <a class="nav-link" href="會員首頁.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>雲墨空間</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        關於你的選項
+      </div>
+
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          <i class="fas fa-fw fa-cog"></i>
+          <span>藏書閣</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">空間分類:</h6>
+            <a class="collapse-item" href="最近閱讀.html">最近閱讀</a>
+            <a class="collapse-item" href="心儀書單.html">心儀書單</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- Nav Item - Utilities Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+          <i class="fas fa-fw fa-wrench"></i>
+          <span>我的帳戶</span>
+        </a>
+        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">帳戶總覽:</h6>
+            <a class="collapse-item" href="我的帳戶.html">帳戶綜覽</a>
+          </div>
+        </div>
+      </li>
+
+
+       <!-- Nav Item - Utilities Collapse Menu -->
+       <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>閱讀紀錄</span>
+        </a>
+        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">個人歷史閱讀:</h6>
+            <a class="collapse-item" href="本月閱讀紀錄.html">本月閱讀紀錄</a>
+            <a class="collapse-item" href="#">半年閱讀紀錄</a>
+          </div>
+        </div>
+      </li>
+
+        <!-- Nav Item - Charts -->
+        <li class="nav-item">
+          <a class="nav-link" href="我的評論.html">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>我的評論</span></a>
+        </li>
+
+
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+
+    <!-- End of Sidebar -->  
+
+ 
+    <!-- Content Wrapper -->
+  
+<div id="content-wrapper" class="d-flex flex-column">
+ 
+  
+ 
+      <!-- Main Content -->
+<div id="content">
+
+
+      <!-- Nav Area -->
+    
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+          <header class="header-area">    
+            <!-- Nav Area -->
+            <div class="original-nav-area" id="stickyNav">
+                <div class="classy-nav-container breakpoint-off">
+                    <div class="container-xl">
+                        <!-- Classy Menu -->
+                        <nav class="classy-navbar justify-content-between">
+        
+                            <!-- Subscribe btn -->
+                           <img src="img/雲墨小棧-(白底黑字) - 複製.png" alt="動畫" class="rounded mylogo1" width="300">
+                            <!-- Navbar Toggler -->
+                            <div class="classy-navbar-toggler">
+                                <span class="navbarToggler"><span></span><span></span><span></span></span>
+                            </div>
+        
+                            <!-- Menu -->
+                            <div class="classy-menu  mymenu1" id="originalNav">
+                                <!-- close btn -->
+                                <div class="classycloseIcon  ">
+                                    <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                                </div>
+        
+                                <!-- Nav Start -->
+                                <div class="classynav">
+                                    <ul>
+                                        <li><a href="index.html">回到書綱</a></li>                                
+                                        <li><a href="about-us.html">加入書單</a></li>                                 
+                                        <li><a href="contact.html">我要評論</a></li>
+                                        <li><a href="#">章節</a>
+                                            <ul class="dropdown">
+                                                <li><a href="#">第一章</a></li>
+                                                <li><a href="#">第二章</a></li>
+                                                <li><a href="#">第三章</a></li>
+                                                <li><a href="#">第四章</a></li>
+                                                <li><a href="#">第五章</a></li>
+                                            </ul>
+                                        </li>
+        
+                                    </ul>
+                                
+                                </div>
+                                <!-- Nav End -->
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        
+      
+      
+        </nav>
+  <!-- End of Topbar -->
+
+  <!-- Begin Page Content -->
+<div class="container-xl">
+
+    <div class="container mybg1 rounded">
+      <div class="row">
+        <div class="col-sm-12">
+      
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-2"></div>
+              <div class="col-sm-8 mytest1">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <img src="img/封面/首頁圖片/test1.jpg" alt="動畫" class="rounded-circle" width="170">
+                    </div>
+                    <div class="col-sm-8">
+                      <div class="media">
+      
+                        <div class="media-body">
+                          <!--userid-->
+                          <h3 class="mt-0 text-primary">全端班第三組</h3>
+                          <!--個人memo-->
+                          <h5 class="text-white">問世間情是何物？直教生死相許。天南地北雙飛客，
+                            老翅幾回寒暑。歡樂趣，離別苦，就中更有癡兒女。君應有語，渺萬里層雲，千山暮雪，只影向誰去？
+                            橫汾路，寂寞當年簫鼓。荒煙依舊平楚。招魂楚些何嗟及，山鬼暗啼風雨。天也妒，未信與，鶯兒燕子俱黃土。
+                            千秋萬古，為留待騷人，狂歌痛飲，來訪雁丘處。</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+              </div>
+             
+              <div class="col-sm-2 mytest1">
+                <h4>追蹤<a href="#">&nbsp;&nbsp;3&nbsp;&nbsp;</a>人</h4>
+                <h4>發表<a href="#">&nbsp;&nbsp;0&nbsp;&nbsp;</a>部作品</h4>
+                <h4>共有<a href="#">&nbsp;&nbsp;1&nbsp;&nbsp;</a>份書單</h4>
+                <h4>推薦<a href="#">&nbsp;&nbsp;9&nbsp;&nbsp;</a>本作品</h4>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-wrapper section-padding-100 clearfix">
+      <div class="container">
+          <div class="row">
+              <div class="col-12 col-lg-9">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-sm-12 mybg2 mytest2">
+                      <button type="button" class="btn-outline badge badge-primary myfont1">全端班第三組的書單</button>
+                      <div class="row mytest1">
+                        <div class="col-6 col-sm-3">
+                          <div class="hovereffect">
+                            <img class="img-responsive border-left-danger" src="img/封面/首頁圖片/庶女.jpg" alt="">
+                                <div class="overlay">
+                                    <h2>《庶女明蘭傳》關心則亂</h2>
+                                    <p>
+                                      <a href="#">閱讀連結</a>
+                                    </p>
+                                </div>                           
+                          </div>                       
+                        </div>
+                        <div class="col-6 col-sm-3">
+                          <div class="hovereffect">
+                            <img class="img-responsive border-left-danger" src="img/封面/首頁圖片/瑯牙榜.jpg" alt="">
+                                <div class="overlay">
+                                    <h2>《瑯琊榜之風起長林》海宴</h2>
+                                    <p>
+                                      <a href="#">閱讀連結</a>
+                                    </p>
+                                </div>
+                        </div>
+                        </div>
+                        <div class="col-6 col-sm-3">
+                          <div class="hovereffect">
+                            <img class="img-responsive border-left-danger" src="img/封面/首頁圖片/慶餘年.jpg" alt="">
+                                <div class="overlay">
+                                    <h2>《慶餘年》貓膩</h2>
+                                    <p>
+                                      <a href="#">閱讀連結</a>
+                                    </p>
+                                </div>
+                        </div>
+                        </div>
+                        <div class="col-6 col-sm-3 mystyle1">
+                          <button type="button" class="badge badge-info myfont1">更多...</button>
+                        </div>
+                      </div>
+                      <hr>
+                    </div>
+
+                    
+                  
+                  </div>
+                  
+                </div>
+
+    <div class="container-fluid">
+
+                  <div class="row">
+                    <div class="col-sm-12 mybg4 mytest2">
+
+                      <button type="button" class="btn-outline badge badge-primary myfont1">全端班第三組近期閱覽紀錄</button>
+                      <div class="row mytest1">
+                                
+                  <div class="card-deck mycardeck1">
+                    <div class="card">
+                      <div class="hovereffect">
+                        <img class="img-responsive border-left-primary" src="img/封面/首頁圖片/庶女 - 複製.jpg" alt="">
+                            <div class="overlay">
+                                <h2>《庶女明蘭傳》關心則亂</h2>
+                                <p>
+                                  <a href="#">繼續閱讀</a>
+                                </p>
+                            </div>                           
+                      </div>  
+                      <div class="card-body">
+                        <h5 class="card-title">第二章</h5>
+                        <p class="card-text"></p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">2天前</small>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="hovereffect">
+                        <img class="img-responsive border-left-primary" src="img/封面/首頁圖片/慶餘年 - 複製.jpg" alt="">
+                            <div class="overlay">
+                                <h2>《慶餘年》<br>貓膩</h2>
+                                <p>
+                                  <a href="#">繼續閱讀</a>
+                                </p>
+                            </div>                           
+                      </div>  
+                      <div class="card-body">
+                        <h5 class="card-title">第二十章</h5>
+                        <p class="card-text"></p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">6小時前</small>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="hovereffect">
+                        <img class="img-responsive border-left-primary" src="img/封面/首頁圖片/瑯牙榜 - 複製.jpg" alt="">
+                            <div class="overlay">
+                                <h2>《瑯琊榜之風起長林》海宴</h2>
+                                <p>
+                                  <a href="#">繼續閱讀</a>
+                                </p>
+                            </div>                           
+                      </div>  
+                      <div class="card-body">
+                        <h5 class="card-title">第八章</h5>
+                        <p class="card-text"></p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">1天前</small>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="hovereffect">
+                        <img class="img-responsive border-left-primary" src="img/封面/首頁圖片/《致我們暖暖的小時光》.jpg" alt="">
+                            <div class="overlay">
+                                <h2>《致我們暖暖的小時光》趙乾乾</h2>
+                                <p>
+                                  <a href="#">繼續閱讀</a>
+                                </p>
+                            </div>                           
+                      </div>  
+                      <div class="card-body">
+                        <h5 class="card-title">第五章</h5>
+                        <p class="card-text"></p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">5天前</small>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="container">
+                    <div class="row mybtn1">
+                      <div class="col-sm-11"></div>
+                      <div class="col-sm-1"><h4 class="btn btn-secondary">......</h4></div>
+                    </div>
+                   
+                  </div>
+                  
+            </div>
+            <hr>
+          </div>
+
+          
+        
+        </div>
+        
+    </div>
+
+
+    
+<div class="container-fluid">
+
+      <div class="row">
+        <div class="col-sm-12 mybg4 mytest2">
+
+          <button type="button" class="btn-outline badge badge-primary myfont1">全端班第三組推薦作品</button>
+          <div class="row mytest1">
+      
+   
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-9">
+
+                  <div class="card mb-3 mycard1" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                      <div class="col-md-4">
+                        <div class="hovereffect">
+                          <img class="img-responsive border-left-danger" src="img/封面/首頁圖片/推薦/陳情另.png" alt="">
+                              <div class="overlay">
+                                  <h2>《魔道祖師》墨香銅臭</h2>
+                                  <p>
+                                    <a href="#">閱讀連結</a>
+                                  </p>
+                              </div>                           
+                        </div>   
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">第三組的評論:</h5>
+                          <p class="card-text mytext1">超級無敵好看,超腐,耽美愛好者必看!超級無敵好看,超腐,耽美愛好者必看!
+                            超級無敵好看,超腐,耽美愛好者必看!</p>
+                          <p class="card-text"><small class="text-muted">
+                            <div class="ratings"> 
+                              <div class="empty_star">★★★★★</div>
+                              <div class="full_star">★★★★★</div>
+                              </div>
+                          </small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            
+                
+                  <div class="card mb-3 mycard1" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                      <div class="col-md-4">
+                        <div class="hovereffect">
+                          <img class="img-responsive border-left-danger" src="img/封面/首頁圖片/推薦/墨跡三千.jpg" alt="">
+                              <div class="overlay">
+                                  <h2>《墨跡三千》無垠</h2>
+                                  <p>
+                                    <a href="#">閱讀連結</a>
+                                  </p>
+                              </div>                           
+                        </div>   
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">第三組的評論:</h5>
+                          <p class="card-text mytext1">期待後續發展
+                            快點更新吧</p>
+                          <p class="card-text"><small class="text-muted">
+                            <div class="ratings"> 
+                              <div class="empty_star">★★★★★</div>
+                              <div class="full_star">★★★★★</div>
+                              </div>
+                          </small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card mb-3 mycard1" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                      <div class="col-md-4">
+                        <div class="hovereffect">
+                          <img class="img-responsive border-left-danger" src="img/封面/首頁圖片/推薦/狼將.jpg" alt="">
+                              <div class="overlay">
+                                  <h2>《狼將》<br>狄奧君</h2>
+                                  <p>
+                                    <a href="#">閱讀連結</a>
+                                  </p>
+                              </div>                           
+                        </div>   
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">第三組的評論:</h5>
+                          <p class="card-text mytext1">另一件巧事，狼將也以五胡十六國那驚天撼地的時代為背景，
+                            這讓我有一種緣起於無常的感慨，自然也就貪多接連讀了幾章。
+                            雜七雜八扯了一堆，要點是在我很欽佩狄奧君書畫俱佳的才華，以及不吝償付雙倍於他人的心血。
+                            無論人們喜愛狼將與否，都不能抹煞作者的這份熱情。</p>
+                          <p class="card-text"><small class="text-muted">
+                            <div class="ratings"> 
+                              <div class="empty_star">★★★★★</div>
+                              <div class="full_star">★★★★★</div>
+                              </div>
+                          </small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card mb-3 mycard1" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                      <div class="col-md-4">
+                        <div class="hovereffect">
+                          <img class="img-responsive border-left-danger" src="img/封面/首頁圖片/推薦/誕降師.png" alt="">
+                              <div class="overlay">
+                                  <h2>《誕降師》李穆梅</h2>
+                                  <p>
+                                    <a href="#">閱讀連結</a>
+                                  </p>
+                              </div>                           
+                        </div>   
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">第三組的評論:</h5>
+                          <p class="card-text mytext1">再看了一次誕降師，還是好喜歡少司命喲！溫柔，從容優雅，
+                            風度翩翩（就是我的菜）,我在心裡改了結局，讓樹生在離開求如山那五年裡思念的都是少司命一言一行，
+                            回到求如山後向少司命告白之後兩個人就在一起！（這樣好像有點對不起作者穆梅：請原諒）</p>
+                          <p class="card-text"><small class="text-muted">
+                            <div class="ratings"> 
+                              <div class="empty_star">★★★★★</div>
+                              <div class="full_star">★★★★★</div>
+                              </div>
+                          </small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            
+
+                </div>
+                <div class="col-sm-1"></div>
+              </div>
+             
+            </div>   
+
+      </div>
+      <hr>
+      <button type="button" class="btn btn-block text-primary" data-toggle="collapse" data-target="#展開">展開更多</button>
+        <!--data-target 與 div id所指必須一樣,而且data-target所指須加#-->
+        <div id="展開" class="collapse">
+          <div class="card mb-3 mycard1" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <div class="hovereffect">
+                  <img class="img-responsive border-left-danger" src="img/封面/首頁圖片/推薦/狼將.jpg" alt="">
+                      <div class="overlay">
+                          <h2>《狼將》<br>狄奧君</h2>
+                          <p>
+                            <a href="#">閱讀連結</a>
+                          </p>
+                      </div>                           
+                </div>   
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">第三組的評論:</h5>
+                  <p class="card-text mytext1">另一件巧事，狼將也以五胡十六國那驚天撼地的時代為背景，
+                    這讓我有一種緣起於無常的感慨，自然也就貪多接連讀了幾章。
+                    雜七雜八扯了一堆，要點是在我很欽佩狄奧君書畫俱佳的才華，以及不吝償付雙倍於他人的心血。
+                    無論人們喜愛狼將與否，都不能抹煞作者的這份熱情。</p>
+                  <p class="card-text"><small class="text-muted">
+                    <div class="ratings"> 
+                      <div class="empty_star">★★★★★</div>
+                      <div class="full_star">★★★★★</div>
+                      </div>
+                  </small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+    </div>
+</div>
+</div>
+</div>
+
+             
+
+              
+        
+    <!-- ##### Sidebar Area ##### -->
+    <div class="col-12 col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1000ms">
+        <div class="post-sidebar-area">
+
+
+          <ul class="nav nav-pills mb-3 mybg3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">您的短評</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">關注的人</a>
+            </li>
+           
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+              <div class="card border-dark mb-3 mylistgroup1" style="max-width: 18rem;">
+                <div class="card-header mybg6 text-white">評論:<a href="#" class="text-info">《全職高手》</a></div>
+                <div class="card-body text-dark mybg5">
+                  <h5 class="card-title">很棒的作品,繼續加油!
+                  </h5>
+                  <p class="card-text">2020.01.05</p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="card border-dark mb-3 mylistgroup1 mymargin" style="max-width: 18rem;">
+                <div class="card-header mybg6 text-white">評論:<a href="#" class="text-info">《墨跡三千》</a></div>
+                <div class="card-body text-dark mybg5">
+                  <h5 class="card-title">我覺得可以～這個應該要紅！好作品就是要推一個
+                  </h5>
+                  <p class="card-text">2020.01.05</p>
+                </div>
+              </div>
+              
+              <hr>
+
+              <div class="card border-dark mb-3 mylistgroup1 mymargin" style="max-width: 18rem;">
+                <div class="card-header mybg6 text-white">評論:<a href="#" class="text-info">《殺手的戀愛相談》</a></div>
+                <div class="card-body text-dark mybg5">
+                  <h5 class="card-title">非常精彩和搞笑，是極佳之作，但因為漫畫好像點擊會比小說優勝
+                  </h5>
+                  <p class="card-text">2020.01.05</p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="card border-dark mb-3 mylistgroup1 mymargin" style="max-width: 18rem;">
+                <div class="card-header mybg6 text-white">評論:<a href="#" class="text-info">《海賊王》</a></div>
+                <div class="card-body text-dark mybg5">
+                  <h5 class="card-title">和之國部分完全不知所云,很拖....
+                  </h5>
+                  <p class="card-text">2020.05.05</p>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="card border-dark mb-3 mylistgroup1 mymargin" style="max-width: 18rem;">
+                <div class="card-header mybg6 text-white">評論:<a href="#" class="text-info">《我的藍》</a></div>
+                <div class="card-body text-dark mybg5">
+                  <h5 class="card-title">一直很喜歡席娟的作品!
+                  </h5>
+                  <p class="card-text">2020.01.05</p>
+                </div>
+              </div>
+            </div>
+
+            <!--關注的人-->
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-1"></div>
+                  <div class="col-sm-10">
+                    <div class="hovereffect">
+                      <img class="img-responsive rounded-circle" src="img/封面/首頁圖片/1組.jpg" width="250" alt="">
+                          <div class="overlay">
+                              <a href="#"><h2>大廚到你家!</h2></a>
+                              <p>
+                                <h3 class="text-white">第一組</h3>
+                              </p>
+                          </div>                           
+                    </div>  
+                  </div>
+                  <div class="col-sm-1"></div>
+                </div>
+              </div>
+
+              <hr>
+             
+             
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-1"></div>
+                  <div class="col-sm-10">
+                    <div class="hovereffect">
+                      <img class="img-responsive rounded-circle" src="img/封面/首頁圖片/2組.jpg" width="250" alt="">
+                          <div class="overlay">
+                              <a href="#"><h2>生活小幫手!</h2></a>
+                              <p>
+                                <h3 class="text-white">第二組</h3>
+                              </p>
+                          </div>                           
+                    </div>  
+                  </div>
+                  <div class="col-sm-1"></div>
+                </div>
+              </div>
+
+              <hr>
+             
+             
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-1"></div>
+                  <div class="col-sm-10">
+                    <div class="hovereffect">
+                      <img class="img-responsive rounded-circle" src="img/封面/首頁圖片/4組.jpg" width="250" alt="">
+                          <div class="overlay">
+                              <a href="#"><h2>尋找健身房!</h2></a>
+                              <p>
+                                <h3 class="text-white">第四組</h3>
+                              </p>
+                          </div>                           
+                    </div>  
+                  </div>
+                  <div class="col-sm-1"></div>
+                </div>
+              </div>
+
+              <hr>
+             
+             
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-1"></div>
+                  <div class="col-sm-10">
+                    <div class="hovereffect">
+                      <img class="img-responsive rounded-circle" src="img/封面/首頁圖片/test1.jpg" width="250" alt="">
+                          <div class="overlay">
+                              <a href="#"><h2>雲墨小棧</h2></a>
+                              <p>
+                                <h3 class="text-white">第三組</h3>
+                              </p>
+                          </div>                           
+                    </div>  
+                  </div>
+                  <div class="col-sm-1"></div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+<br><br><br>
+    <!-- sidebar post -->
+    <div class="sidebar-widget-area">
+    <h5 class="title">您可能會感興趣的書籍..</h5>
+
+    <div class="widget-content">
+
+  <!-- Single Blog Post -->
+  <div class="single-blog-post d-flex align-items-center widget-post">
+     
+      <div class="hovereffect">
+        <img class="img-responsive Thumbnail" src="img/封面/首頁圖片/感興趣/一滴滴故事.jpg" alt="">
+            <div class="overlay">
+                <h2>作者: 心臟</h2>
+				<p>
+					<a href="#">搶先閱讀</a>
+				</p>
+            </div>
+    </div> 
+      <!-- Post Content -->
+      <div class="post-content mymargin2">
+          <a href="#" class="post-tag btn btn-outline-info">LGBT</a>
+          <h4><a href="#" class="post-headline">一滴滴故事</a></h4>
+          <div class="post-meta">
+              <p><a href="#"></a></p>
+          </div>
+      </div>
+  </div>
+
+    <!-- Single Blog Post -->
+    <div class="single-blog-post d-flex align-items-center widget-post">
+     
+      <div class="hovereffect">
+        <img class="img-responsive Thumbnail" src="img/封面/首頁圖片/感興趣/彼岸學院.jpg" alt="">
+            <div class="overlay">
+                <h2>作者: 夏語天</h2>
+				<p>
+					<a href="#">搶先閱讀</a>
+				</p>
+            </div>
+    </div> 
+      <!-- Post Content -->
+      <div class="post-content mymargin1">
+        <a href="#" class="post-tag btn btn-outline-info">奇幻</a>
+          <h4><a href="#" class="post-headline">彼岸<br>學院</a></h4>
+          <div class="post-meta">
+              <p><a href="#"></a></p>
+          </div>
+      </div>
+  </div>
+
+
+  <!-- Single Blog Post -->
+  <div class="single-blog-post d-flex align-items-center widget-post">
+  
+      <div class="hovereffect">
+        <img class="img-responsive Thumbnail" src="img/封面/首頁圖片/感興趣/雙子花.jpg" alt="">
+            <div class="overlay">
+                <h2>作者: 暗夜</h2>
+				<p>
+					<a href="#">搶先閱讀</a>
+				</p>
+            </div>
+    </div> 
+      <!-- Post Content -->
+      <div class="post-content mymargin1">
+        <a href="#" class="post-tag btn btn-outline-info">驚悚</a>
+          <h4><a href="#" class="post-headline">雙子花</a></h4>
+          <div class="post-meta">
+              <p><a href="#"></a></p>
+          </div>
+      </div>
+  </div>
+
+          <!-- Single Blog Post -->
+    <div class="single-blog-post d-flex align-items-center widget-post">
+     
+      <div class="hovereffect">
+        <img class="img-responsive Thumbnail" src="img/封面/首頁圖片/感興趣/納米百合.jpg" alt="">
+            <div class="overlay">
+                <h2>作者: 方愚</h2>
+				<p>
+					<a href="#">搶先閱讀</a>
+				</p>
+            </div>
+    </div> 
+      <!-- Post Content -->
+      <div class="post-content mymargin2">
+        <a href="#" class="post-tag btn btn-outline-info">LGBT</a>
+          <h4><a href="#" class="post-headline">納米<br>百合</a></h4>
+          <div class="post-meta">
+              <p><a href="#"></a></p>
+          </div>
+      </div>
+  </div>        
+</div>
+  
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+<!-- /.container-fluid -->
+
+</div>
+  <!-- End of Main Content -->
+
+  <!-- Footer -->
+  <footer class="footer-area text-center">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+               
+                <!-- Footer Nav Area -->
+                <div class="classy-nav-container breakpoint-off">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-center myfooter1">
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="#">首頁</a></li>
+                                    <li><a href="#">漫畫</a></li>
+                                    <li><a href="#">小說</a></li>
+                                    <li><a href="#">今日最新</a></li>
+                                    <li><a href="#">排行榜</a></li>
+                                    <li><a href="#">兌換點數</a></li>
+                                    <li><a href="#">購物車</a></li>
+                                    <li><a href="#">登入|註冊</a></li>
+                                </ul>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved<i class="fa fa-heart-o" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank"></a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+</footer>
+
+  <!-- End of Footer -->
+
+</div>
+<!-- End of Content Wrapper -->
+
+</div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Bootstrap core JavaScript-->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Core plugin JavaScript-->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="js/sb-admin-2.min.js"></script>
+
+<!-- Page level plugins -->
+<script src="vendor/chart.js/Chart.min.js"></script>
+
+<!-- Page level custom scripts -->
+<script src="js/demo/chart-area-demo.js"></script>
+<script src="js/demo/chart-pie-demo.js"></script>
+
+<!-- jQuery (Necessary for All JavaScript Plugins) -->
+<script src="js/jquery/jquery-2.2.4.min.js"></script>
+<!-- Popper js -->
+<script src="js/popper.min.js"></script>
+<!-- Bootstrap js -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Plugins js -->
+<script src="js/plugins.js"></script>
+<!-- Active js -->
+<script src="js/active.js"></script>
+
+
+
+   
+  
+
+</body>
+
+</html>

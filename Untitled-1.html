@@ -1,0 +1,50 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+ <script src="../scripts/jquery-1.3.1.js" type="text/javascript"></script>
+</head>
+<body>
+
+    $.fn.fontfit = function(max) {
+        var max_size = 18;
+        if (typeof(max) == "undefined")
+        max = max_size;
+        $(this).wrapInner('<div id="fontfit"></div>');
+        var dheight = $(this).height();
+        var cheight = $("#fontfit").height();
+        var fsize = (($(this).css("font-size")).slice(0,-2))*1;
+        while(cheight<dheight && fsize<max) {
+        fsize =1;
+        $(this).css("font-size",fsize "px");
+        cheight = $("#fontfit").height();
+        }
+        while(cheight>dheight || fsize>max) {
+        fsize-=1;
+        $(this).css("font-size",fsize "px");
+        cheight = $("#fontfit").height();
+        }
+        $("#fontfit").replaceWith($("#fontfit").html());
+        return this;
+        }
+<div class="msg">
+    <div class="msg_caption">
+        <span class="bigger" >放大</span>
+        <span class="smaller" >縮小</span>
+        <span >20</span>
+        <span >18</span>
+        <span >16</span>
+    </div>
+    <div>
+        <p id="para">
+        This is some text. This is some text. This is some text. This is some text. This
+        is some text. This is some text. This is some text. This is some text. This is some
+        text. This is some text. This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text. This is some text. This
+        is some text. This is some text.
+        </p>
+    </div>
+</div>
+</body>
+</html>
